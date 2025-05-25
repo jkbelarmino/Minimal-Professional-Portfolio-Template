@@ -148,6 +148,13 @@
 </section>
 
 <button id="scrollToTop" class="floating-button">↑ Top</button>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("scrollToTop").addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+</script>
 
 
     <section id="contact" class="content-section">
